@@ -13,7 +13,7 @@ The following functions and methods were used in this problem:
 
 • `np.random.random((n,m))` - this function generates random floats in the 0-1 range then stores it to an array with the shape of n number of rows and m number of columns.
 
-The code below creates a 2-dimensional 5×5 array with random values, and stores it to the variable 'X'.
+The code below creates a 2-D 5×5 array with random values, and stores it to the variable 'X'.
 ```python
 X = np.random.random((5,5))
 ```
@@ -24,20 +24,22 @@ X_normalized = (X - X.mean()) / X.std()
 ```
 
 We were also tasked to save the normalized ndarray as "X_normalized.npy". 
-•np.save("<array_file_name>.npy", <array_name>) - this command saves the NumPy array permanently as a binary .npy file.
 
+•np.save("<array_file_name>.npy", <array_name>) - this command saves the NumPy array permanently as a binary .npy file.
 ```python
 np.save("X_normalized.npy", X_normalized)
 ```
 
 # **2. Divisible by 3 Problem**
 
-In this problem, create a 10 x 10 ndarray, which are the squares of the first 100 positive integers. From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy
+In this problem, create a 10×10 ndarray, which are the squares of the first 100 positive integers. From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy
 
 The following functions and methods were used in this problem:
 
-• `np.arange(1, 101)` - this function generates integers starting from 1 up to 100 ([101] is excluded), storing it to a 1-dimensional array.
-• `.reshape(10, 10)` - this code reshapes the 1D array of 100 elements into a 10×10 2D array.
+• `np.arange(1, 101)` - this function generates integers starting from 1 up to 100 ([101] is excluded), storing it to a 1-D array.
+
+• `.reshape(10, 10)` - this code reshapes the 1-D array of 100 elements into a 10×10 2-D array.
+
 • `** 2` - this operation then squares the array element-wise.
 
 Combining all the functions above, we can assign the 10x10 array containing the squares of the first 100 positive integers to variable 'A'.
@@ -45,14 +47,17 @@ Combining all the functions above, we can assign the 10x10 array containing the 
 A = np.arange(1, 101).reshape(10, 10) ** 2
 ```
 
-To find the integers that are divisible by 3, we use the modulus (%) operation as an argument index in accessing the elements in the array. 
+To find the integers that are divisible by 3, we use the modulus (%) operator as an argument index in accessing the elements in the array. 
 ```python
 div_by_3 = A[A % 3 == 0]
 ```
+
 We were also tasked to save the result as div_by_3.npy
 ```python
 np.save("div_by_3.npy", div_by_3)
 ```
+
+
 
 Thank you for reading! 
 
