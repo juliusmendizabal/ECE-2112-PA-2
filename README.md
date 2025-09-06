@@ -4,6 +4,11 @@
 
 The content of this repository contains the Programming Assignment 2 for our course "Advance Computer Programming" this S.Y. 2025-2026. This project covers two python problems pertaining to Module 2 - Numerical Python (Numpy).
 
+*All problems were first initialized with the code below to load the NumPy library and easily call the functions using 'np'.
+```python
+import numpy as np
+```
+
 # **1. Normalization Problem**
 
 In this problem, create a random 5×5 ndarray and store it to variable X. Normalize X. Save your normalized
@@ -56,7 +61,6 @@ We were also tasked to save the result as div_by_3.npy
 ```python
 np.save("div_by_3.npy", div_by_3)
 ```
-
 
 
 Thank you for reading! 
