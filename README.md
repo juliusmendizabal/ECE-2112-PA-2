@@ -65,6 +65,6 @@ np.save("div_by_3.npy", div_by_3)
 
 Thank you for reading! 
 
-To see the main python program for Programming Assignment 2, click this link and download. Open on Jupyter Notebook, then run all cells.
+To see the main python program for Programming Assignment 2, click this link https://github.com/juliusmendizabal/ECE-2112-PA-2/blob/main/Programming%20Assignment%202.ipynb and download. Open on Jupyter Notebook, then run all cells.
 
 
