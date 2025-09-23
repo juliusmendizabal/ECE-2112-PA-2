@@ -30,7 +30,7 @@ X_normalized = (X - X.mean()) / X.std()
 
 We were also tasked to save the normalized ndarray as "X_normalized.npy". 
 
-•np.save("<array_file_name>.npy", <array_name>) - this command saves the NumPy array permanently as a binary .npy file.
+`np.save("<array_file_name>.npy", <array_name>)` - this command saves the NumPy array permanently as a binary .npy file.
 ```python
 np.save("X_normalized.npy", X_normalized)
 ```
@@ -67,4 +67,8 @@ Thank you for reading!
 
 To see the main python program for Programming Assignment 2, click this link https://github.com/juliusmendizabal/ECE-2112-PA-2/blob/main/Programming%20Assignment%202.ipynb and download. Open on Jupyter Notebook, then run all cells.
 
+#### **README file Version History:**
 
+September 6, 2025 - Initial README output uploaded (content + format).
+
+September 23, 2025 - Updated few details + a README file Version History.
